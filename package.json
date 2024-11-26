@@ -1,6 +1,7 @@
 {
-  "name": "suiware-io",
+  "name": "suiware.io",
   "version": "4.7.0",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
