@@ -1,3 +1,3 @@
-# Suiware.io
+# suiware.io
 
-Suiware.io site, created from the [satnaing/astro-paper](https://github.com/satnaing/astro-paper) template.
+An Astro-powered site, created from the [satnaing/astro-paper](https://github.com/satnaing/astro-paper) theme.
