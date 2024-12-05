@@ -7,6 +7,13 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "trailingSlash": false
+    "trailingSlash": false,
+    "redirects": [
+      {
+        "source": "/about",
+        "destination": "/posts/intro",
+        "type": 302
+      }
+    ]
   }
 }

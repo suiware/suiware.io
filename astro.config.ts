@@ -33,7 +33,7 @@ export default defineConfig({
     },
   },
   redirects: {
-    '/about': '/posts/intro'
+    // '/about': '/posts/intro'
   },
   trailingSlash: 'never',
   vite: {
