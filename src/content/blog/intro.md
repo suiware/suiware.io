@@ -20,8 +20,8 @@ Suiware has been founded by [Kos Komelin](https://x.com/kkomelin) who regularly 
 
 Some of our projects:
 
-- [Sui dApp Starter](https://github.com/suiware/sui-dapp-starter) - the easiest way to start a new React/Move project
-- [Sui dApp Kit Theme Creator](https://github.com/suiware/sui-dapp-kit-theme-creator) - a simple app that lets you generate a Sui dApp Kit theme by two colors
-- [MerSui](https://github.com/suiware/mersui) - a simple "Buy Me a Coffee" React button with payments in SUI
+- [Sui dApp Starter](https://sui-dapp-starter.dev) - the easiest way to start a new React/Move project
+- [Sui dApp Kit Theme Creator](https://sui-dapp-kit-theme-creator.app) - a simple app that lets you generate a Sui dApp Kit theme by two colors
+- [MerSui](https://mersui.xyz) - a simple "Buy Me a Coffee" React button with payments in SUI
 
 Follow us on [X](https://x.com/suiware_) or [Github](https://github.com/suiware) to ride the wave of everything juicy that's coming next from us!
