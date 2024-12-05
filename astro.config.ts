@@ -35,7 +35,7 @@ export default defineConfig({
   redirects: {
     '/about': '/posts/intro'
   },
-  trailingSlash: SITE.trailingSlash === true ? 'always' : 'never',
+  trailingSlash: 'never',
   vite: {
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],

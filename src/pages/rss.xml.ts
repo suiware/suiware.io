@@ -10,7 +10,7 @@ export async function GET() {
     title: SITE.title,
     description: SITE.desc,
     site: SITE.website,
-    trailingSlash: SITE.trailingSlash,
+    trailingSlash: false,
     items: sortedPosts.map(({ data, slug }) => ({
       link: `posts/${slug}`,
       title: data.title,
