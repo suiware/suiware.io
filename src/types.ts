@@ -18,6 +18,7 @@ export type Site = {
     text?: string;
     appendFilePath?: boolean;
   };
+  trailingSlash?: boolean;
 };
 
 export type SocialObjects = {

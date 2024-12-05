@@ -20,6 +20,7 @@ export const SITE: Site = {
     text: "Suggest Changes",
     appendFilePath: true,
   },
+  trailingSlash: false
 };
 
 export const LOCALE = {
