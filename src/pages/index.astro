@@ -47,15 +47,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       <p>
         {SITE.desc}
       </p>
-      <!-- <p>
-        It's led by 
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-        @kkomelin
-        </LinkButton>
-      </p> -->
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
