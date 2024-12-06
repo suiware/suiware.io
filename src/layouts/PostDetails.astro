@@ -8,6 +8,8 @@ import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
 import ShareLinks from "@components/ShareLinks.astro";
 import { SITE } from "@config";
+import ArticleStructuredData from "@components/schema/ArticleStructuredData.astro";
+import BlogPostingStructuredData from "@components/schema/BlogPostingStructuredData.astro";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -62,6 +64,8 @@ const nextPost =
 ---
 
 <Layout {...layoutProps}>
+  <BlogPostingStructuredData slot="structured-data" {...post.data} />
+
   <Header />
 
   <div class="mx-auto flex w-full max-w-3xl justify-start px-2">

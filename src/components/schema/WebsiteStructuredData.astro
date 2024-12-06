@@ -1,0 +1,14 @@
+---
+import { SITE } from "@config"
+
+const pageUrl = SITE.website // new URL(Astro.url.pathname, Astro.site)
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE.title,
+  url: pageUrl,
+}
+---
+
+<script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />

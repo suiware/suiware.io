@@ -3,7 +3,7 @@ import type { Site, SocialObjects } from "./types";
 const GITHUB_PROJECT_URL = "https://github.com/suiware/suiware.io";
 
 export const SITE: Site = {
-  website: "https://suiware.io/", // replace this with your deployed domain
+  website: "https://suiware.io",
   author: "Kos Komelin",
   profile: "https://x.com/kkomelin",
   desc: "Suiware is an independent virtual organization dedicated to creating useful tools and content for the Sui ecosystem.",

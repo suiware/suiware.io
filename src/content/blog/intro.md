@@ -1,5 +1,5 @@
 ---
-author: Kos Komelin
+# author: Kos Komelin
 pubDatetime: 2024-12-05T15:27:00Z
 # modDatetime: 2022-11-26T13:27:00Z
 title: Quick Intro

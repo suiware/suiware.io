@@ -4,6 +4,7 @@ import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Hr from "@components/Hr.astro";
 import LinkButton from "@components/LinkButton.astro";
+import WebsiteStructuredData from "@components/schema/WebsiteStructuredData.astro";
 import Socials from "@components/Socials.astro";
 import { SITE, SOCIALS } from "@config";
 import Layout from "@layouts/Layout.astro";
@@ -20,6 +21,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
+  <WebsiteStructuredData slot="structured-data" />
+
   <Header />
   <main id="main-content">
     <section id="hero">
