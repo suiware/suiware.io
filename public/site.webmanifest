@@ -1,7 +1,7 @@
 {
     "name": "Suiware",
     "short_name": "Suiware",
-    "description": "Suiware is an independent virtual organization dedicated to creating useful tools and content for the Sui ecosystem.",
+    "description": "An independent virtual organization dedicated to creating useful tools and content for the Sui ecosystem",
     "start_url": "/?utm_source=app_manifest",
     "icons": [
         {

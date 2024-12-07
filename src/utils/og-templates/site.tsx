@@ -1,12 +1,13 @@
-import satori from "satori";
 import { SITE } from "@config";
+import satori from "satori";
 import loadGoogleFonts, { type FontOptions } from "../loadGoogleFont";
 
 export default async () => {
   return satori(
     <div
       style={{
-        background: "#fefbfb",
+        background: "#000123",
+        color: "#617bff",
         width: "100%",
         height: "100%",
         display: "flex",
@@ -19,8 +20,8 @@ export default async () => {
           position: "absolute",
           top: "-1px",
           right: "-1px",
-          border: "4px solid #000",
-          background: "#ecebeb",
+          border: "4px solid #617bff",
+          background: "#000234",
           opacity: "0.9",
           borderRadius: "4px",
           display: "flex",
@@ -33,8 +34,8 @@ export default async () => {
 
       <div
         style={{
-          border: "4px solid #000",
-          background: "#fefbfb",
+          border: "4px solid #617bff",
+          background: "#000123",
           borderRadius: "4px",
           display: "flex",
           justifyContent: "center",
