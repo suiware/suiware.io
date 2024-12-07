@@ -9,7 +9,7 @@ export const SITE: Site = {
   desc: "Suiware is an independent virtual organization dedicated to creating useful tools and content for the Sui ecosystem.",
   slogan: "Open source. Open mind. Open heart.",
   title: "Suiware",
-  ogImage: "og.jpg",
+  ogImage: "img/og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 3,
