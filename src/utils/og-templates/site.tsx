@@ -7,7 +7,7 @@ export default async () => {
     <div
       style={{
         background: "#000123",
-        color: "#617bff",
+        color: "#EAEDF3",
         width: "100%",
         height: "100%",
         display: "flex",
