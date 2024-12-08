@@ -14,7 +14,9 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     react(),
-    sitemap(),
+    sitemap({
+      filter: page => SITE.showArchives || !page.endsWith("/archives"),
+    }),
   ],
   markdown: {
     remarkPlugins: [
@@ -35,7 +37,7 @@ export default defineConfig({
   redirects: {
     // '/about': '/posts/intro'
   },
-  trailingSlash: 'never',
+  trailingSlash: "never",
   vite: {
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
