@@ -28,6 +28,6 @@ Here is what I got out of the hacker house:
 
 - And finally, I created [MerSui](https://mersui.xyz), a project which I needed myself and which I wanted to help the community support good content efforts of each other.
 
-I came back home, energized, motivated and well-equipped with some nice Sui merch.
+I came back home energized, motivated and well-equipped with some nice Sui merch.
 
 Huge shout-out to all Sui people involved in organizing the house!
