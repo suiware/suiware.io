@@ -22,7 +22,7 @@ Here is what I got out of the hacker house:
 
 - Met Sui DevRels in person. I told about my projects, shared my vision, got feedback and some ideas.
 
-- Collected feedback about [Sui dApp Starter](https://sui-dapp-starter.dev) from hackers. I was focusing on finding things which are not smooth in the starter and I got some really valuable improvement ideas in return.
+- Collected feedback about [Sui dApp Starter](https://sui-dapp-starter.dev) from hackers. I was focusing on finding things which were not smooth in the starter and I got some really valuable improvement ideas in return.
 
 - Learned and accepted my limitations. At some point, I stumbled upon not being able to manage my time effectively because of EF DevCon and 900+ side events happening in parallel. Thanks to some advice, I eventually accepted the fact that I would miss a lot of interesting stuff, which helped to release stress and move on with no regrets.
 
