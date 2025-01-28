@@ -8,7 +8,7 @@ import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
 import ShareLinks from "@components/ShareLinks.astro";
 import { SITE } from "@config";
-import ArticleStructuredData from "@components/schema/ArticleStructuredData.astro";
+// import ArticleStructuredData from "@components/schema/ArticleStructuredData.astro";
 import BlogPostingStructuredData from "@components/schema/BlogPostingStructuredData.astro";
 
 export interface Props {
@@ -23,7 +23,7 @@ const {
   author,
   description,
   ogImage,
-  canonicalURL,
+  canonicalUrl,
   pubDatetime,
   modDatetime,
   tags,
@@ -44,7 +44,7 @@ const layoutProps = {
   description,
   pubDatetime,
   modDatetime,
-  canonicalURL,
+  canonicalUrl,
   ogImage: ogUrl,
   scrollSmooth: true,
 };

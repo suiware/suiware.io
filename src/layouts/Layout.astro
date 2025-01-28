@@ -11,11 +11,13 @@ export interface Props {
   profile?: string;
   description?: string;
   ogImage?: string;
-  canonicalURL?: string;
+  canonicalUrl?: string;
   pubDatetime?: Date;
   modDatetime?: Date | null;
   scrollSmooth?: boolean;
 }
+
+const postUrl = new URL(Astro.url.pathname, Astro.site).href
 
 const {
   title = SITE.title,
@@ -23,7 +25,7 @@ const {
   profile = SITE.profile,
   description = SITE.desc,
   ogImage = SITE.ogImage,
-  canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
+  canonicalUrl = Astro.props.canonicalUrl || postUrl,
   pubDatetime,
   modDatetime,
   scrollSmooth = false,
@@ -45,14 +47,14 @@ const socialImageURL = new URL(
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width" />
 
-    <link rel="canonical" href={canonicalURL} />
+    <link rel="canonical" href={canonicalUrl} />
 
     <title>{title}</title>
     <meta name="description" content={description} />
 
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:url" content={postUrl} />
     <meta property="og:image" content={socialImageURL} />
     <meta name="twitter:card" content="summary_large_image" />
 
