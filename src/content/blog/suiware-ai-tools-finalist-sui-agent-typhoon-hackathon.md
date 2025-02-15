@@ -108,7 +108,7 @@ There are a lot of opportunities to extend and improve the project, for example:
 - Add Web UI examples
 - Create automated tests
 
-If you have your own ideas which you want to contribute to the project, ping me on [Discord](https://discord.gg/CD3wRRP5) or create an issue on [Github](https://github.com/suiware/ai-tools/issues).
+If you have your own ideas which you want to contribute to the project, ping me on [Discord](https://discord.gg/CD3wRRP5) or create an issue on [Github](https://github.com/suiware/ai-tools/issues/new).
 
 Let's make @suiware/ai-tools the best AI toolkit for Sui!
 
