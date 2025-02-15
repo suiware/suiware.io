@@ -91,7 +91,8 @@ For the Sui Agent Typhoon Hackathon, I've built a collection of pluggable tools 
 Basically with my tools plugged in, your AI assistant would be capable of processing the following prompt:
 
 ```
-If my Sui balance is above 5 and VIX is below 20, turn 1 sui into USDC and donate 0.1 SUI to @kkomelin ;)
+If my Sui balance is above 5 and VIX is below 20,
+turn 1 sui into USDC and donate 0.1 SUI to @kkomelin ;)
 ```
 
 Sounds cool? If you think so, play with the [examples](https://github.com/suiware/ai-tools/blob/main/packages/examples/README.md) and share your feedback with [me on X](https://twitter.com/suiware_)!
