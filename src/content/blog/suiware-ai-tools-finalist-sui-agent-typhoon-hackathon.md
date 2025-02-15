@@ -84,7 +84,7 @@ I hope you get the idea. Now go and change your Linkedin title to "AI Solution A
 
 For the Sui Agent Typhoon Hackathon, I've built a collection of pluggable tools for `ai`, which allow your AI assistants to interact with Sui Network (balance, transfer and swap) and also get some market data (VIX value). I called the project [@suiware/ai-tools](https://www.npmjs.com/package/@suiware/ai-tools).
 
-<iframe class="aspect-video w-full" src="https://www.youtube.com/embed/oeAXqvaQzcI?si=etPBF24txuv-UNEO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="youtube-video" src="https://www.youtube.com/embed/oeAXqvaQzcI?si=etPBF24txuv-UNEO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [Project intro on Youtube](https://youtu.be/oeAXqvaQzcI)
 

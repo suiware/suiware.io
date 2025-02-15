@@ -94,6 +94,11 @@
   }
 
   /* ===== Code Blocks & Syntax Highlighting ===== */
+  iframe.youtube-video {
+    @apply aspect-video w-full;
+  }
+
+  /* ===== Code Blocks & Syntax Highlighting ===== */
   pre:has(code) {
     @apply border border-skin-line;
   }
