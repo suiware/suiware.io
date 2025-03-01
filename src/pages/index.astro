@@ -4,9 +4,11 @@ import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Hr from "@components/Hr.astro";
 import LinkButton from "@components/LinkButton.astro";
+import Project from "@components/projects/Project.astro";
 import WebsiteStructuredData from "@components/schema/WebsiteStructuredData.astro";
 import Socials from "@components/Socials.astro";
 import { SITE, SOCIALS } from "@config";
+import projects from "@content/projects";
 import Layout from "@layouts/Layout.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import { getCollection } from "astro:content";
@@ -61,10 +63,28 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     <Hr />
 
     {
+      projects.length > 0 && (
+        <>
+          <section id="projects">
+            <h2>Recent Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-4">
+              {projects.sort(() => Math.random() - 0.5).map((data) => (
+                <Project
+                  {...data}
+                />
+              ))}
+            </div>
+          </section>
+          {projects.length > 0 && <Hr />}
+        </>
+      )
+    }
+
+    {
       featuredPosts.length > 0 && (
         <>
-          <section id="featured">
-            <h2>Featured</h2>
+          <section id="featured-posts">
+            <h2>Featured Posts</h2>
             <ul>
               {featuredPosts.map(({ data, slug }) => (
                 <Card
@@ -140,11 +160,13 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */
-  #featured,
+  #projects,
+  #featured-posts,
   #recent-posts {
     @apply pb-6 pt-12;
   }
-  #featured h2,
+  #projects h2,
+  #featured-posts h2,
   #recent-posts h2 {
     @apply text-2xl font-semibold tracking-wide;
   }
