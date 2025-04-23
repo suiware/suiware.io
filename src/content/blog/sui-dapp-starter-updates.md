@@ -5,7 +5,7 @@ pubDatetime: 2025-02-11T00:00:00Z
 title: Sui dApp Starter Updates, February 2025
 slug: sui-dapp-starter-updates-february-2025
 description: Sui dApp Starter has just gotten a few exciting updates, including a new Next.js template and @suiware/kit integration.
-featured: true
+featured: false
 draft: false
 tags:
   - sui-dapp-starter
