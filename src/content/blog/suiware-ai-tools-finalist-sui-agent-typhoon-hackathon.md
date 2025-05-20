@@ -5,7 +5,7 @@ pubDatetime: 2025-02-15T00:00:00Z
 title: Suiware AI Tools is a Finalist of the Sui Agent Typhoon Hackaton
 slug: suiware-ai-tools-finalist-sui-agent-typhoon-hackathon
 description: Suiware AI Tools has made it to the finals of the first Sui AI hackathon. Time to tell you what the project is about and why you may want to have it in your toolkit.
-featured: true
+featured: false
 draft: false
 tags:
   - events
