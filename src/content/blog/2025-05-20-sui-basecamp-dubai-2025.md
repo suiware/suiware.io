@@ -27,7 +27,7 @@ Dubai is international, it's colossal, it's also not cheap, so you need to know 
 
 Sui Basecamp is the biggest gathering of Sui devs, users, infra providers and investors. For you to get the scale, it was 2000 people registered.
 
-![Sui Basecamp 2025: main room](/public/img/blog/sui-basecamp-2025/sui-basecamp-2025-main-room.jpg)
+![Sui Basecamp 2025: main room](/img/blog/sui-basecamp-2025/sui-basecamp-2025-main-room.jpg)
 
 There were three parallel session tracks, such as Main (state, vision and plans), Dev (dev innovations) and Ecosystem (partners, projects and such), Expo zone (sponsor booths) and some side-activities.
 
@@ -46,7 +46,7 @@ Of course, I cannot cover everything but let me give you an idea:
 ## What Else
 
 Besides talking to people and listening to talks, I tried on-chain coffee crafted by Mysten Labs hackers:
-![Sui Basecamp 2025: MystenLabs Hacker Team](/public/img/blog/sui-basecamp-2025/sui-basecamp-2025-mysten-coffee.jpg)
+![Sui Basecamp 2025: MystenLabs Hacker Team](/img/blog/sui-basecamp-2025/sui-basecamp-2025-mysten-coffee.jpg)
 
 I hugged rare creatures:
 <div style="display:flex;flex-direction:row;gap:1rem;">
