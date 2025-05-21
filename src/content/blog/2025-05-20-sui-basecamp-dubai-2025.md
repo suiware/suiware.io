@@ -9,6 +9,7 @@ featured: true
 draft: false
 tags:
   - events
+ogImage: /img/blog/sui-basecamp-2025/sui-basecamp-2025-main-room.jpg
 ---
 
 It was my first Sui Basecamp and my first time in Dubai. That trip reshaped my views and broadened my horizons but first things first...
