@@ -1,48 +1,48 @@
 ---
-import Card from "@components/Card";
-import Footer from "@components/Footer.astro";
-import Header from "@components/Header.astro";
-import Hr from "@components/Hr.astro";
-import LinkButton from "@components/LinkButton.astro";
-import Project from "@components/projects/Project.astro";
-import WebsiteStructuredData from "@components/schema/WebsiteStructuredData.astro";
-import Socials from "@components/Socials.astro";
-import { SITE, SOCIALS } from "@config";
-import projects from "@content/projects";
-import Layout from "@layouts/Layout.astro";
-import getSortedPosts from "@utils/getSortedPosts";
+import IconRss from "@/assets/icons/IconRss.svg";
+import Card from "@/components/Card.astro";
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import Hr from "@/components/Hr.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import Project from "@/components/projects/Project.astro";
+import WebsiteStructuredData from "@/components/schema/WebsiteStructuredData.astro";
+import Socials from "@/components/Socials.astro";
+import { SITE } from "@/config";
+import { SOCIALS } from "@/constants";
+import projects from "@/data/projects";
+import Layout from "@/layouts/Layout.astro";
+import getSortedPosts from "@/utils/getSortedPosts";
 import { getCollection } from "astro:content";
+import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
-
-const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
   <WebsiteStructuredData slot="structured-data" />
 
   <Header />
-  <main id="main-content">
-    <section id="hero">
-      <h1>{SITE.title}</h1>
+  <main id="main-content" data-layout="index">
+    <section id="hero" class="pt-8 pb-6">
+      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
+      {SITE.title}</h1>
       <a
         target="_blank"
         href="/rss.xml"
-        class="rss-link"
+        class="inline-block"
         aria-label="rss feed"
         title="RSS Feed"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
-          ><path
-            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
-          ></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
-          ></path><circle cx="6" cy="18" r="2"></circle>
-        </svg>
+      <IconRss
+      width={20}
+      height={20}
+      class="scale-125 stroke-accent stroke-3"
+    />
         <span class="sr-only">RSS Feed</span>
       </a>
 
@@ -50,10 +50,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         {SITE.desc}
       </p>
       {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            {/* <div class="social-links">Social Links:</div> */}
+         SOCIALS.length > 0 && (
+          <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
+            <div class="mr-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
             <Socials />
           </div>
         )
@@ -65,8 +64,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     {
       projects.length > 0 && (
         <>
-          <section id="projects">
-            <h2>Recent Projects</h2>
+          <section id="projects" class="pt-12 pb-6">
+            <h2 class="text-2xl font-semibold tracking-wide">Recent Projects</h2>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-4">
               {projects.map((data) => (
                 <Project
@@ -83,15 +82,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     {
       featuredPosts.length > 0 && (
         <>
-          <section id="featured-posts">
-            <h2>Featured Posts</h2>
+          <section id="featured-posts" class="pt-12 pb-6">
+            <h2 class="text-2xl font-semibold tracking-wide">Featured Posts</h2>
             <ul>
-              {featuredPosts.map(({ data, slug }) => (
-                <Card
-                  href={`/posts/${slug}`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
+              {featuredPosts.map(( data ) => (
+                <Card variant="h3" {...data} />
               ))}
             </ul>
           </section>
@@ -102,32 +97,22 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     {
       recentPosts.length > 0 && (
-        <section id="recent-posts">
-          <h2>Recent Posts</h2>
+        <section id="recent-posts" class="pt-12 pb-6">
+          <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
           <ul>
             {recentPosts.map(
-              ({ data, slug }, index) =>
-                index < SITE.postPerIndex && (
-                  <Card
-                    href={`/posts/${slug}`}
-                    frontmatter={data}
-                    secHeading={false}
-                  />
-                )
+              (data, index) =>
+              index < SITE.postPerIndex && <Card variant="h3" {...data} />
             )}
           </ul>
         </section>
       )
     }
 
-    <div class="all-posts-btn-wrapper">
+    <div class="my-8 text-center">
       <LinkButton href="/posts">
         All Posts
-        <svg xmlns="http://www.w3.org/2000/svg"
-          ><path
-            d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-          ></path>
-        </svg>
+        <IconArrowRight class="inline-block" />
       </LinkButton>
     </div>
   </main>
@@ -135,42 +120,12 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Footer />
 </Layout>
 
-<style>
-  /* ===== Hero Section ===== */
-  #hero {
-    @apply pb-6 pt-8;
-  }
-  #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
-  }
-  #hero .rss-link {
-    @apply mb-6;
-  }
-  #hero .rss-icon {
-    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
-  }
-  #hero p {
-    @apply my-2;
-  }
-  .social-wrapper {
-    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
-  }
-  .social-links {
-    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
-  }
-
-  /* ===== Featured & Recent Posts Sections ===== */
-  #projects,
-  #featured-posts,
-  #recent-posts {
-    @apply pb-6 pt-12;
-  }
-  #projects h2,
-  #featured-posts h2,
-  #recent-posts h2 {
-    @apply text-2xl font-semibold tracking-wide;
-  }
-  .all-posts-btn-wrapper {
-    @apply my-8 text-center;
-  }
-</style>
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const indexLayout = (document.querySelector("#main-content") as HTMLElement)
+      ?.dataset?.layout;
+    if (indexLayout) {
+      sessionStorage.setItem("backUrl", "/");
+    }
+  });
+</script>

@@ -1,35 +1,43 @@
 ---
-import { SITE } from "@config"
-import type { CollectionEntry } from "astro:content"
+import { SITE } from "@/config";
+
+// export interface Props {
+//   title?: string;
+//   author?: string;
+//   profile?: string;
+//   description?: string;
+//   ogImage?: string;
+//   canonicalUrl?: string;
+//   pubDatetime?: Date;
+//   modDatetime?: Date | null;
+//   scrollSmooth?: boolean;
+// }
+
+import type { CollectionEntry } from "astro:content";
 
 type Props = CollectionEntry<"blog">["data"]
 
-const { title, description, pubDatetime, modDatetime, ogImage } =
+const { title, description, pubDatetime, modDatetime, ogImage = SITE.ogImage ? `/${SITE.ogImage}` : "/og.png" } =
   Astro.props as Props
 
 const pageUrl = new URL(Astro.url.pathname, Astro.site)
 
+const socialImageURL = typeof ogImage === "string" ? new URL(ogImage, Astro.url) : ogImage;
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: title,
+  headline: `${title}`,
+  image: `${socialImageURL}`,
+  datePublished: `${pubDatetime?.toISOString()}`,
+  ...(modDatetime && { dateModified: modDatetime.toISOString() }),
   description,
-  datePublished: pubDatetime.toISOString(),
-  dateModified: modDatetime?.toISOString() ?? undefined,
   url: pageUrl,
-  thumbnailUrl: ogImage,
-  // image: {
-  //   "@type": "ImageObject",
-  //   url: heroImage.url.src,
-  //   width: heroImage.url.width,
-  //   height: heroImage.url.height,
-  //   caption: heroImage.alt,
-  // },
+  thumbnailUrl: `${socialImageURL}`,
   author: {
     "@type": "Person",
     name: SITE.author,
-    // description: author.bio,
-    url: SITE.profile,
+    url: SITE.profile
   },
 }
 ---
