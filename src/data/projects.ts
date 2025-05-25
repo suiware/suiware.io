@@ -1,7 +1,7 @@
 export default [
   {
     name: "Sui dApp Starter",
-    description: "'Create React App' for full-stack Sui dApps",
+    description: "Create-React-App for full-stack Sui dApps",
     url: "https://sui-dapp-starter.dev",
   },
   {
