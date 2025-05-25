@@ -1,12 +1,12 @@
-import IconBrandX from "@/assets/icons/IconBrandX.svg";
-import IconDiscord from "@/assets/icons/IconDiscord.svg";
-import IconFacebook from "@/assets/icons/IconFacebook.svg";
-import IconGitHub from "@/assets/icons/IconGitHub.svg";
-import IconMail from "@/assets/icons/IconMail.svg";
-import IconPinterest from "@/assets/icons/IconPinterest.svg";
-import IconTelegram from "@/assets/icons/IconTelegram.svg";
-import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
-import { GITHUB_PROJECT_URL, SITE } from "@/config";
+import IconBrandX from "@/assets/icons/IconBrandX.svg"
+import IconDiscord from "@/assets/icons/IconDiscord.svg"
+import IconFacebook from "@/assets/icons/IconFacebook.svg"
+import IconGitHub from "@/assets/icons/IconGitHub.svg"
+import IconMail from "@/assets/icons/IconMail.svg"
+import IconPinterest from "@/assets/icons/IconPinterest.svg"
+import IconTelegram from "@/assets/icons/IconTelegram.svg"
+import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg"
+import { GITHUB_PROJECT_URL, SITE } from "@/config"
 
 export const SOCIALS = [
   {
@@ -27,7 +27,7 @@ export const SOCIALS = [
     linkTitle: `${SITE.title} on Discord`,
     icon: IconDiscord,
   },
-] as const;
+] as const
 
 export const SHARE_LINKS = [
   {
@@ -66,4 +66,4 @@ export const SHARE_LINKS = [
     linkTitle: `Share this post via email`,
     icon: IconMail,
   },
-] as const;
+] as const

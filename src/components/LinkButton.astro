@@ -1,12 +1,12 @@
 ---
 export interface Props {
-  id?: string;
-  href: string;
-  class?: string;
-  className?: string;
-  ariaLabel?: string;
-  title?: string;
-  disabled?: boolean;
+  id?: string
+  href: string
+  class?: string
+  className?: string
+  ariaLabel?: string
+  title?: string
+  disabled?: boolean
 }
 
 const {
@@ -16,13 +16,13 @@ const {
   ariaLabel,
   title,
   disabled = false,
-} = Astro.props;
+} = Astro.props
 ---
 
 {
   disabled ? (
     <span
-    id={id}
+      id={id}
       class:list={["group inline-block", className]}
       title={title}
       aria-disabled={disabled}
@@ -31,7 +31,7 @@ const {
     </span>
   ) : (
     <a
-    id={id}
+      id={id}
       {href}
       class:list={["group inline-block hover:text-accent", className]}
       aria-label={ariaLabel}

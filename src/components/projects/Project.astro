@@ -1,19 +1,19 @@
 ---
 export interface Props {
-  name: string;
-  description: string;
-  url: string;
+  name: string
+  description: string
+  url: string
 }
 
-const { name, description, url } = Astro.props;
+const { name, description, url } = Astro.props
 ---
 
 <a
   href={url}
-  class="flex w-full grow flex-col rounded-lg border border-skin-line p-4 hover:border-skin-accent group"
+  class="border-skin-line hover:border-skin-accent group flex w-full grow flex-col rounded-lg border p-4"
 >
   <p
-    class="whitespace-nowrap text-lg font-medium text-skin-accent decoration-dashed underline-offset-4 group-hover:underline focus-visible:no-underline focus-visible:underline-offset-0"
+    class="text-skin-accent text-lg font-medium whitespace-nowrap decoration-dashed underline-offset-4 group-hover:underline focus-visible:no-underline focus-visible:underline-offset-0"
   >
     {name}
   </p>

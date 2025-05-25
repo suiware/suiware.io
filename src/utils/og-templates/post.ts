@@ -1,8 +1,8 @@
-import { SITE } from "@/config";
-import type { CollectionEntry } from "astro:content";
-import satori from "satori";
+import { SITE } from "@/config"
+import type { CollectionEntry } from "astro:content"
+import satori from "satori"
 // import { html } from "satori-html";
-import loadGoogleFonts, { type FontOptions } from "../loadGoogleFont";
+import loadGoogleFonts, { type FontOptions } from "../loadGoogleFont"
 
 // const markup = html`<div
 //       style={{
@@ -229,5 +229,5 @@ export default async (post: CollectionEntry<"blog">) => {
         post.data.title + post.data.author + SITE.title + "by"
       )) as FontOptions[],
     }
-  );
-};
+  )
+}

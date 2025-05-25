@@ -1,20 +1,20 @@
 ---
-import { SITE } from "@/config";
-import "@/styles/global.css";
-import { ClientRouter } from "astro:transitions";
+import { SITE } from "@/config"
+import "@/styles/global.css"
+import { ClientRouter } from "astro:transitions"
 
-const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION
 
 export interface Props {
-  title?: string;
-  author?: string;
-  profile?: string;
-  description?: string;
-  ogImage?: string;
-  canonicalUrl?: string;
-  pubDatetime?: Date;
-  modDatetime?: Date | null;
-  scrollSmooth?: boolean;
+  title?: string
+  author?: string
+  profile?: string
+  description?: string
+  ogImage?: string
+  canonicalUrl?: string
+  pubDatetime?: Date
+  modDatetime?: Date | null
+  scrollSmooth?: boolean
 }
 
 const postUrl = new URL(Astro.url.pathname, Astro.site).href
@@ -27,9 +27,9 @@ const {
   pubDatetime,
   modDatetime,
   scrollSmooth = false,
-} = Astro.props;
+} = Astro.props
 
-const socialImageURL = new URL(ogImage, Astro.url);
+const socialImageURL = new URL(ogImage, Astro.url)
 ---
 
 <!doctype html>
@@ -96,13 +96,13 @@ const socialImageURL = new URL(ogImage, Astro.url);
     <!-- Enable RSS feed auto-discovery  -->
     <!-- https://docs.astro.build/en/recipes/rss/#enabling-rss-feed-auto-discovery -->
     <link
-    rel="alternate"
-    type="application/rss+xml"
-    title={SITE.title}
-    href={new URL("rss.xml", Astro.site)}
-  />
+      rel="alternate"
+      type="application/rss+xml"
+      title={SITE.title}
+      href={new URL("rss.xml", Astro.site)}
+    />
 
-  <meta name="theme-color" content="" />
+    <meta name="theme-color" content="" />
 
     {
       // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
@@ -116,11 +116,14 @@ const socialImageURL = new URL(ogImage, Astro.url);
       )
     }
 
-<ClientRouter />
+    <ClientRouter />
 
-<script is:inline src="/toggle-theme.js"></script>
+    <script is:inline src="/toggle-theme.js"></script>
 
-    <script is:inline src="https://cloud.umami.is/script.js" data-website-id="35668c72-26a6-4cc0-adff-a1e48c6a4118"></script>
+    <script
+      is:inline
+      src="https://cloud.umami.is/script.js"
+      data-website-id="35668c72-26a6-4cc0-adff-a1e48c6a4118"></script>
   </head>
   <body>
     <slot />

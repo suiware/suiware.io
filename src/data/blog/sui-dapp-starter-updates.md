@@ -11,7 +11,7 @@ tags:
   - sui-dapp-starter
 ---
 
-Following your feedback, Sui dApp Starter has just gotten a few important updates, which I'd like to share with you. 
+Following your feedback, Sui dApp Starter has just gotten a few important updates, which I'd like to share with you.
 
 <!--truncate-->
 
@@ -35,11 +35,11 @@ pnpm create sui-dapp@latest
 
 We have a few templates available now, including a couple of new ones:
 
-| Template | Description | 
-| --- | --- | 
-| Greeting (React) | A default good old template with a Move contract which utilizes Sui Object Display (NFT) and native Sui Randomness. Frontend is built with React, SWC, Vite, Tailwind. |
-| Greeting (Next.js) | **(new)** The Move part is the same as in Greetings (React), but the frontend is built with Next.js. |
-| Counter (React) | **(new)** A lightweight template with a simple Move counter contract and a React frontend. |
+| Template           | Description                                                                                                                                                            |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Greeting (React)   | A default good old template with a Move contract which utilizes Sui Object Display (NFT) and native Sui Randomness. Frontend is built with React, SWC, Vite, Tailwind. |
+| Greeting (Next.js) | **(new)** The Move part is the same as in Greetings (React), but the frontend is built with Next.js.                                                                   |
+| Counter (React)    | **(new)** A lightweight template with a simple Move counter contract and a React frontend.                                                                             |
 
 More on the templates in the [Sui dApp Starter docs](https://sui-dapp-starter.dev/docs/templates/).
 
@@ -49,7 +49,7 @@ Sui dApp Starter is now integrated with [@suiware/kit](https://github.com/suiwar
 
 I started from extracting Sui-related components and hooks to a separate project to make them reusable, so you guys could use it in your own projects without Sui dApp Starter, and then I also added AddressInput and AmountInput components which I think people need in most projects.
 
-Here are the kit [docs](https://www.npmjs.com/package/@suiware/kit) and [demo](https://kit.suiware.io/). 
+Here are the kit [docs](https://www.npmjs.com/package/@suiware/kit) and [demo](https://kit.suiware.io/).
 Feel free to suggest or contribute new components and hooks! I'm here to help with getting them to the kit.
 
 --

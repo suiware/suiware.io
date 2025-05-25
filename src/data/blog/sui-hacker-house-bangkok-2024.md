@@ -8,8 +8,7 @@ featured: false
 draft: false
 tags:
   - events
-description:
-  Kos Komelin shares his experience of attending the Sui Hacker House in Bangkok.
+description: Kos Komelin shares his experience of attending the Sui Hacker House in Bangkok.
 ---
 
 In November 2024, I spent about two weeks among Sui builders from different countries at Sui Hacker House in Bangkok.

@@ -1,20 +1,20 @@
 ---
-import IconArrowLeft from "@/assets/icons/IconArrowLeft.svg";
-import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
-import type { Page } from "astro";
-import type { CollectionEntry } from "astro:content";
-import LinkButton from "./LinkButton.astro";
+import IconArrowLeft from "@/assets/icons/IconArrowLeft.svg"
+import IconArrowRight from "@/assets/icons/IconArrowRight.svg"
+import type { Page } from "astro"
+import type { CollectionEntry } from "astro:content"
+import LinkButton from "./LinkButton.astro"
 
 export interface Props {
-  page: Page<CollectionEntry<"blog">>;
+  page: Page<CollectionEntry<"blog">>
 }
 
-const { page } = Astro.props;
+const { page } = Astro.props
 ---
 
 {
   page.lastPage > 1 && (
-  <nav class="mt-auto mb-8 flex justify-center" aria-label="Pagination">
+    <nav class="mt-auto mb-8 flex justify-center" aria-label="Pagination">
       <LinkButton
         disabled={!page.url.prev}
         href={page.url.prev as string}

@@ -1,5 +1,5 @@
 ---
-import { SITE } from "@/config";
+import { SITE } from "@/config"
 
 // export interface Props {
 //   title?: string;
@@ -13,16 +13,22 @@ import { SITE } from "@/config";
 //   scrollSmooth?: boolean;
 // }
 
-import type { CollectionEntry } from "astro:content";
+import type { CollectionEntry } from "astro:content"
 
 type Props = CollectionEntry<"blog">["data"]
 
-const { title, description, pubDatetime, modDatetime, ogImage = SITE.ogImage ? `/${SITE.ogImage}` : "/og.png" } =
-  Astro.props as Props
+const {
+  title,
+  description,
+  pubDatetime,
+  modDatetime,
+  ogImage = SITE.ogImage ? `/${SITE.ogImage}` : "/og.png",
+} = Astro.props as Props
 
 const pageUrl = new URL(Astro.url.pathname, Astro.site)
 
-const socialImageURL = typeof ogImage === "string" ? new URL(ogImage, Astro.url) : ogImage;
+const socialImageURL =
+  typeof ogImage === "string" ? new URL(ogImage, Astro.url) : ogImage
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -37,10 +43,14 @@ const structuredData = {
   author: {
     "@type": "Person",
     name: SITE.author,
-    url: SITE.profile
+    url: SITE.profile,
   },
 }
 ---
 
-<script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify(structuredData)}
+/>
 <meta property="og:type" content="article" />

@@ -7,12 +7,11 @@ slug: intro
 featured: false
 draft: false
 # tags:
-  # - docs
-description:
-  Let's meet with Suiware, its founder and current projects.
+# - docs
+description: Let's meet with Suiware, its founder and current projects.
 ---
 
-Welcome to the Suiware place, frens! 
+Welcome to the Suiware place, frens!
 
 At Suiware, we develop tools, templates and SDKs for the Sui ecosystem and also demonstrate how to effectively develop for Sui.
 

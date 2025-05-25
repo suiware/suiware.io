@@ -16,7 +16,7 @@ After a few months of active development and experimentation, [Sui dApp Starter]
 
 <!--truncate-->
 
-I'm happy to share the great news that Sui dApp Starter has won the 1st place in the Randomness category of <a target="_blank" rel="noopener noreferrer" href="https://blog.sui.io/2024-sui-overflow-hackathon-winners">Sui Overflow 2024</a>! 
+I'm happy to share the great news that Sui dApp Starter has won the 1st place in the Randomness category of <a target="_blank" rel="noopener noreferrer" href="https://blog.sui.io/2024-sui-overflow-hackathon-winners">Sui Overflow 2024</a>!
 
 ![sui-overflow-hackathon-win-nft](/img/blog/sui-overflow-hackathon-win-nft.png)
 

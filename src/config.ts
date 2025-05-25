@@ -1,4 +1,4 @@
-export const GITHUB_PROJECT_URL = "https://github.com/suiware/suiware.io";
+export const GITHUB_PROJECT_URL = "https://github.com/suiware/suiware.io"
 
 export const SITE = {
   website: "https://suiware.io",
@@ -22,4 +22,4 @@ export const SITE = {
   dynamicOgImage: true,
   lang: "en", // html lang code. Set this empty and default will be "en"
   timezone: "Europe/Belgrade", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-} as const;
+} as const

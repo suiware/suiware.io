@@ -32,7 +32,7 @@ Sui Basecamp is the biggest gathering of Sui devs, users, infra providers and in
 
 There were three parallel session tracks, such as Main (state, vision and plans), Dev (dev innovations) and Ecosystem (partners, projects and such), Expo zone (sponsor booths) and some side-activities.
 
-To be honest, I didn't attend as many talks as I wanted during the basecamp. Got lost in discussions with my fellow hackers and the community, which were quite  fruitful by the way. It was nice to see how fellow hackers were progressing with their projects.
+To be honest, I didn't attend as many talks as I wanted during the basecamp. Got lost in discussions with my fellow hackers and the community, which were quite fruitful by the way. It was nice to see how fellow hackers were progressing with their projects.
 
 ## Some Alpha
 
@@ -50,6 +50,7 @@ Besides talking to people and listening to talks, I tried on-chain coffee crafte
 ![Sui Basecamp 2025: MystenLabs Hacker Team](/img/blog/sui-basecamp-2025/sui-basecamp-2025-mysten-coffee.jpg)
 
 I hugged rare creatures:
+
 <div style="display:flex;flex-direction:row;gap:1rem;">
 <div>
 <img src="/img/blog/sui-basecamp-2025/sui-basecamp-2025-hippo.jpg" alt="Sui Basecamp 2025: Hippo" />

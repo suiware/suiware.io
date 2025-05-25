@@ -11,7 +11,7 @@ tags:
   - ai-tools
 ---
 
-The [Sui Agent Typhoon](/posts/suiware-ai-tools-finalist-sui-agent-typhoon-hackathon) hackathon has been a good blast for the AI movement in the Sui ecosystem - and Suiware is no exception. 
+The [Sui Agent Typhoon](/posts/suiware-ai-tools-finalist-sui-agent-typhoon-hackathon) hackathon has been a good blast for the AI movement in the Sui ecosystem - and Suiware is no exception.
 
 I continue improving my hackathon project [@suiware/ai-tools](https://www.npmjs.com/package/@suiware/ai-tools). Let me briefly mention the most meaningful updates.
 

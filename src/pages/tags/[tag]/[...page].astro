@@ -1,34 +1,34 @@
 ---
-import Card from "@/components/Card.astro";
-import Footer from "@/components/Footer.astro";
-import Header from "@/components/Header.astro";
-import Pagination from "@/components/Pagination.astro";
-import { SITE } from "@/config";
-import Layout from "@/layouts/Layout.astro";
-import Main from "@/layouts/Main.astro";
-import getPostsByTag from "@/utils/getPostsByTag";
-import getUniqueTags from "@/utils/getUniqueTags";
-import type { GetStaticPathsOptions } from "astro";
-import { getCollection } from "astro:content";
+import Card from "@/components/Card.astro"
+import Footer from "@/components/Footer.astro"
+import Header from "@/components/Header.astro"
+import Pagination from "@/components/Pagination.astro"
+import { SITE } from "@/config"
+import Layout from "@/layouts/Layout.astro"
+import Main from "@/layouts/Main.astro"
+import getPostsByTag from "@/utils/getPostsByTag"
+import getUniqueTags from "@/utils/getUniqueTags"
+import type { GetStaticPathsOptions } from "astro"
+import { getCollection } from "astro:content"
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-  const posts = await getCollection("blog");
-  const tags = getUniqueTags(posts);
+  const posts = await getCollection("blog")
+  const tags = getUniqueTags(posts)
 
   return tags.flatMap(({ tag, tagName }) => {
-    const tagPosts = getPostsByTag(posts, tag);
+    const tagPosts = getPostsByTag(posts, tag)
 
     return paginate(tagPosts, {
       params: { tag },
       props: { tagName },
       pageSize: SITE.postPerPage,
-    });
-  });
+    })
+  })
 }
 
-const params = Astro.params;
-const { tag } = params;
-const { page, tagName } = Astro.props;
+const params = Astro.params
+const { tag } = params
+const { page, tagName } = Astro.props
 ---
 
 <Layout title={`Tag: ${tagName} | ${SITE.title}`}>
@@ -48,4 +48,3 @@ const { page, tagName } = Astro.props;
 
   <Footer noMarginTop={page.lastPage > 1} />
 </Layout>
-

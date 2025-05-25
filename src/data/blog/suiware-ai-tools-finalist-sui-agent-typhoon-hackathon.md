@@ -13,7 +13,7 @@ tags:
   - ai-tools
 ---
 
-My project has made it to the finals of the first [Sui Agent Typhoon](https://sui.io/sui-agent-typhoon) hackathon. 
+My project has made it to the finals of the first [Sui Agent Typhoon](https://sui.io/sui-agent-typhoon) hackathon.
 Let me tell you what the project is about and how it can get you to the next level as a developer.
 
 <!--truncate-->
@@ -32,7 +32,7 @@ Here is an example of such a tool which fetches current temperature in Sydney:
 
 ```ts
 export const sydneyTemperatureTool = tool({
-  description: 'Gets current temperature in Sydney',
+  description: "Gets current temperature in Sydney",
   parameters: z.object({}),
   execute: async () => {
     const latitude = -33.8688 // Sydney's latitude
@@ -62,8 +62,8 @@ Simple structure, isn't it? Yet powerful once plugged in to an AI agent like so.
 
 ```ts
 const { text } = await generateText({
-  model: anthropic('claude-3-5-sonnet-latest'),
-  prompt: 'I want to know the current temperature in Sydney',
+  model: anthropic("claude-3-5-sonnet-latest"),
+  prompt: "I want to know the current temperature in Sydney",
   tools: {
     sydneyTemperature: sydneyTemperatureTool,
   },
@@ -101,6 +101,7 @@ Sounds cool? If you think so, play with the [examples](https://github.com/suiwar
 ## Next steps
 
 There are a lot of opportunities to extend and improve the project, for example:
+
 - Improve suiTransferTool: add support for other tokens
 - Add more tools: staking, lending, pools, etc.
 - Add more services: Suilend, Bluefin, Cetus, DefiLlama, etc.

@@ -1,7 +1,7 @@
 ---
-import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg";
-import LinkButton from "./LinkButton.astro";
-import { SITE } from "@/config";
+import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg"
+import LinkButton from "./LinkButton.astro"
+import { SITE } from "@/config"
 ---
 
 {
@@ -23,15 +23,15 @@ import { SITE } from "@/config";
   /* Update Search Praam */
   function updateGoBackUrl() {
     const backButton: HTMLAnchorElement | null =
-      document.querySelector("#back-button");
+      document.querySelector("#back-button")
 
-    const backUrl = sessionStorage.getItem("backUrl");
+    const backUrl = sessionStorage.getItem("backUrl")
 
     if (backUrl && backButton) {
-      backButton.href = backUrl;
+      backButton.href = backUrl
     }
   }
 
-  document.addEventListener("astro:page-load", updateGoBackUrl);
-  updateGoBackUrl();
+  document.addEventListener("astro:page-load", updateGoBackUrl)
+  updateGoBackUrl()
 </script>

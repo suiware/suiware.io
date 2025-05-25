@@ -1,9 +1,9 @@
-import sitemap from "@astrojs/sitemap";
-import tailwindcss from "@tailwindcss/vite";
-import { defineConfig } from "astro/config";
-import remarkCollapse from "remark-collapse";
-import remarkToc from "remark-toc";
-import { SITE } from "./src/config";
+import sitemap from "@astrojs/sitemap"
+import tailwindcss from "@tailwindcss/vite"
+import { defineConfig } from "astro/config"
+import remarkCollapse from "remark-collapse"
+import remarkToc from "remark-toc"
+import { SITE } from "./src/config"
 
 // https://astro.build/config
 export default defineConfig({
@@ -40,4 +40,4 @@ export default defineConfig({
     responsiveImages: true,
     preserveScriptOrder: true,
   },
-});
+})

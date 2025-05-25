@@ -14,4 +14,4 @@ export default [
     description: "Sui tools for Vercel AI SDK",
     url: "https://npmjs.com/package/@suiware/ai-tools",
   },
-];
+]
