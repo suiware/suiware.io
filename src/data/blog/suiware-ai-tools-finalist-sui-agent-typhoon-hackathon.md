@@ -11,6 +11,7 @@ tags:
   - events
   - hackathons
   - ai-tools
+  - tutorials
 ---
 
 My project has made it to the finals of the first [Sui Agent Typhoon](https://sui.io/sui-agent-typhoon) hackathon.
