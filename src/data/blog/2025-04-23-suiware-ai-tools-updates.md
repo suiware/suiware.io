@@ -5,7 +5,7 @@ pubDatetime: 2025-04-23T00:00:00Z
 title: "Suiware AI Tools Updates, April 2025"
 slug: suiware-ai-tools-updates-april-2025
 description: AI Tools are getting better and better. Here is the list of updates for April 2025.
-featured: true
+featured: false
 draft: false
 tags:
   - ai-tools

@@ -4,7 +4,7 @@ pubDatetime: 2025-05-27T00:00:00Z
 # modDatetime: 2025-01-28T00:00:00Z
 title: "Using Suiware MCP from Claude Code"
 slug: suiware-mcp-claude-code
-description: Learn how to plug in Suiware MCP server to Claude Code and have fun.
+description: Learn how to supply Suiware MCP tools to Claude Code and have fun.
 featured: true
 draft: false
 tags:
@@ -59,7 +59,7 @@ Use the absolute path to your `.env` file in `--env-config-file`:
 
 _If you don't have Claude Code CLI installed, refer to the [Claude Code guide](https://docs.anthropic.com/en/docs/claude-code/getting-started)._
 
-Now we're ready to plug Suiware MCP to Claude Code:
+Time to run Claude Code with Suiware MCP enabled:
 
 ```bash
 claude -p "get my balances and address" --mcp-config ./claude_config.json --allowedTools "mcp__suiware-mcp__get-wallet-balance,mcp__suiware-mcp__get-address"
@@ -67,7 +67,7 @@ claude -p "get my balances and address" --mcp-config ./claude_config.json --allo
 
 To add more tools, just follow the same pattern `mcp__suiware-mcp__[tool-name]` and add them to `--allowedTools` comma-separated. 
 
-Here are the tools you can plug currently:
+Here are the tools you can use currently:
 
 - `get-address` (e.g. "show my address")
 - `get-wallet-balance` (e.g. "my balances")
