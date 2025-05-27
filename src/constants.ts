@@ -6,12 +6,12 @@ import IconMail from "@/assets/icons/IconMail.svg"
 import IconPinterest from "@/assets/icons/IconPinterest.svg"
 import IconTelegram from "@/assets/icons/IconTelegram.svg"
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg"
-import { GITHUB_PROJECT_URL, SITE } from "@/config"
+import { GITHUB_ORGANIZATION_URL, SITE } from "@/config"
 
 export const SOCIALS = [
   {
     name: "Github",
-    href: GITHUB_PROJECT_URL,
+    href: GITHUB_ORGANIZATION_URL,
     linkTitle: ` ${SITE.title} on Github`,
     icon: IconGitHub,
   },

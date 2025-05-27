@@ -1,4 +1,5 @@
-export const GITHUB_PROJECT_URL = "https://github.com/suiware/suiware.io"
+export const GITHUB_ORGANIZATION_URL = "https://github.com/suiware"
+export const GITHUB_PROJECT_URL = `${GITHUB_ORGANIZATION_URL}/suiware.io`
 
 export const SITE = {
   website: "https://suiware.io",
