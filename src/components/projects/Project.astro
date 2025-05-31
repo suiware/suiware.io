@@ -10,10 +10,10 @@ const { name, description, url } = Astro.props
 
 <a
   href={url}
-  class="border-skin-line hover:border-skin-accent group flex w-full grow flex-col rounded-lg border p-4"
+  class="group group-hover:cursor-pointer border-skin-line hover:border-skin-accent group flex w-full grow flex-col rounded-lg border p-4 mx-1 mb-3 underline-offset-8"
 >
   <p
-    class="text-skin-accent text-lg font-semibold whitespace-nowrap decoration-dashed underline-offset-4 group-hover:underline focus-visible:no-underline focus-visible:underline-offset-0"
+    class="relative pb-3 text-lg underline decoration-dashed group-hover:-top-0.5 group-hover:text-accent focus-visible:p-1"
   >
     {name}
   </p>

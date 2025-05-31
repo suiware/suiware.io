@@ -19,8 +19,9 @@ Suiware has been founded by [Kos Komelin](https://x.com/kkomelin) who regularly 
 
 Some of our projects:
 
-- [Sui dApp Starter](https://sui-dapp-starter.dev) - the easiest way to start a new React/Move project
-- [Sui dApp Kit Theme Creator](https://sui-dapp-kit-theme-creator.app) - a simple app that lets you generate a Sui dApp Kit theme by two colors
-- [MerSui](https://mersui.xyz) - a simple "Buy Me a Coffee" React button with payments in SUI
+- [Sui dApp Starter](https://sui-dapp-starter.dev) - the easiest way to start a new React/Move project.
+- [@suiware/ai-tools](https://www.npmjs.com/package/@suiware/ai-tools) - pluggable tools for Vercel AI SDK which allow AI assistants to interact with Sui Network (transfer, swap, stake, etc).
+- [@suiware/mcp](https://www.npmjs.com/package/@suiware/mcp) - an MCP server with built-in `@suiware/ai-tools` and API to use in your apps.
+- [MerSui](https://mersui.xyz) - a simple "Buy Me a Coffee" React button with payments in SUI.
 
 Follow us on [X](https://x.com/suiware_) or [Github](https://github.com/suiware) to ride the wave of everything juicy that's coming next from us!
