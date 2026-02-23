@@ -33,7 +33,7 @@ Then create a config for the Suiware MCP server with your Sui account key and ne
 curl https://raw.githubusercontent.com/suiware/ai-tools/refs/heads/main/packages/mcp/.env.example -o .env
 ```
 
-Open `.env` and set `SUI_PRIVATE_KEY` and `SUI_NETWORK` to your values. 
+Open `.env` and set `SUI_PRIVATE_KEY` and `SUI_NETWORK` to your values.
 Suiware MCP is better suitable for `mainnet`, but most of the tools also support `testnet`.
 
 ## 3. Update `--env-config-file` in `claude_config.json`
@@ -65,7 +65,7 @@ Time to run Claude Code with Suiware MCP enabled:
 claude -p "get my balances and address" --mcp-config ./claude_config.json --allowedTools "mcp__suiware-mcp__get-wallet-balance,mcp__suiware-mcp__get-address"
 ```
 
-To add more tools, just follow the same pattern `mcp__suiware-mcp__[tool-name]` and add them to `--allowedTools` comma-separated. 
+To add more tools, just follow the same pattern `mcp__suiware-mcp__[tool-name]` and add them to `--allowedTools` comma-separated.
 
 Here are the tools you can use currently:
 

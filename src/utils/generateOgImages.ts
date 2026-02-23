@@ -7,7 +7,10 @@ function svgBufferToPngBuffer(svg: string): Uint8Array<ArrayBuffer> {
   const resvg = new Resvg(svg)
   const pngData = resvg.render()
   const png = pngData.asPng()
-  const ab = png.buffer.slice(png.byteOffset, png.byteOffset + png.byteLength) as ArrayBuffer
+  const ab = png.buffer.slice(
+    png.byteOffset,
+    png.byteOffset + png.byteLength
+  ) as ArrayBuffer
   return new Uint8Array(ab)
 }
 

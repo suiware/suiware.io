@@ -11,7 +11,7 @@ tags:
   - events
 ---
 
-I had an honor and pleasure of organizing a morning run for the wider blockchain community in Belgrade. 
+I had an honor and pleasure of organizing a morning run for the wider blockchain community in Belgrade.
 
 <!--truncate-->
 

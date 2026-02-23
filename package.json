@@ -32,7 +32,10 @@
     "tailwindcss": "^4.1.7"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["lefthook", "sharp"]
+    "onlyBuiltDependencies": [
+      "lefthook",
+      "sharp"
+    ]
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
