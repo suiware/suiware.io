@@ -50,7 +50,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured)
       <p>
         {SITE.desc}
       </p>
-      <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
+      <div
+        class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6"
+      >
         {
           SOCIALS.length > 0 && (
             <div class="flex flex-row items-center gap-3">

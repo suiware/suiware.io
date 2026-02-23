@@ -13,16 +13,25 @@ const qrSvg = await qrcode.toString(DONATION_ADDRESS, {
 })
 ---
 
-<Layout title={`Donate | ${SITE.title}`} description="Support Suiware by donating SUI directly to our wallet." robots="noindex, nofollow">
+<Layout
+  title={`Donate | ${SITE.title}`}
+  description="Support Suiware by donating SUI directly to our wallet."
+  robots="noindex, nofollow"
+>
   <Header />
 
-  <main id="main-content" class="mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-4 py-16">
+  <main
+    id="main-content"
+    class="mx-auto flex max-w-3xl flex-1 flex-col items-center justify-center px-4 py-16"
+  >
     <h1 class="text-2xl font-bold text-accent sm:text-3xl">Support our work</h1>
     <p class="mt-3 mb-10 max-w-sm text-center text-sm opacity-75">
       Donations go directly to our Sui wallet - no intermediaries.
     </p>
 
-    <div class="rounded-xl border border-border bg-background p-4 shadow-sm dark:bg-border/20">
+    <div
+      class="rounded-xl border border-border bg-background p-4 shadow-sm dark:bg-border/20"
+    >
       <Fragment set:html={qrSvg} />
     </div>
 
@@ -30,7 +39,7 @@ const qrSvg = await qrcode.toString(DONATION_ADDRESS, {
     <div class="mt-2 flex flex-col items-center gap-2">
       <code
         id="donation-address"
-        class="break-all rounded border border-border bg-border/40 px-3 py-2 text-xs dark:bg-border/20 sm:text-sm"
+        class="rounded border border-border bg-border/40 px-3 py-2 text-xs break-all sm:text-sm dark:bg-border/20"
       >
         {DONATION_ADDRESS}
       </code>
@@ -48,12 +57,16 @@ const qrSvg = await qrcode.toString(DONATION_ADDRESS, {
 </Layout>
 
 <script>
-  document.getElementById("copy-address")?.addEventListener("click", async () => {
-    const address = document.getElementById("donation-address")?.textContent?.trim()
-    if (!address) return
-    await navigator.clipboard.writeText(address)
-    const btn = document.getElementById("copy-address")!
-    btn.textContent = "Copied!"
-    setTimeout(() => (btn.textContent = "Copy"), 1500)
-  })
+  document
+    .getElementById("copy-address")
+    ?.addEventListener("click", async () => {
+      const address = document
+        .getElementById("donation-address")
+        ?.textContent?.trim()
+      if (!address) return
+      await navigator.clipboard.writeText(address)
+      const btn = document.getElementById("copy-address")!
+      btn.textContent = "Copied!"
+      setTimeout(() => (btn.textContent = "Copy"), 1500)
+    })
 </script>
