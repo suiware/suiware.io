@@ -13,6 +13,7 @@ import { slugifyStr } from "@/utils/slugify"
 import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg"
 import IconChevronRight from "@/assets/icons/IconChevronRight.svg"
 import { SITE } from "@/config"
+import LinkButton from "@/components/LinkButton.astro"
 // import ArticleStructuredData from "@/components/schema/ArticleStructuredData.astro";
 import BlogPostingStructuredData from "@/components/schema/BlogPostingStructuredData.astro"
 
@@ -108,6 +109,16 @@ const nextPost =
     <article id="article" class="mx-auto prose mt-8 max-w-3xl">
       <Content />
     </article>
+
+    <div class="mt-10 flex items-center gap-3 text-sm">
+      <span class="opacity-75">If you like our work, support us</span>
+      <LinkButton
+        href="/donate"
+        class="rounded bg-accent px-3 py-1 text-xs text-white hover:text-white hover:opacity-80"
+      >
+        Donate
+      </LinkButton>
+    </div>
 
     <hr class="my-8 border-dashed" />
 

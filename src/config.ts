@@ -1,3 +1,6 @@
+export const DONATION_ADDRESS =
+  "0xe465bfb2f574c35902bf2a0f07e8173a543aec8332187929044733d1e01ba9cd"
+
 export const GITHUB_ORGANIZATION_URL = "https://github.com/suiware"
 export const GITHUB_PROJECT_URL = `${GITHUB_ORGANIZATION_URL}/suiware.io`
 

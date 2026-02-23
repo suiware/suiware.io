@@ -15,6 +15,7 @@ export interface Props {
   pubDatetime?: Date
   modDatetime?: Date | null
   scrollSmooth?: boolean
+  robots?: string
 }
 
 const postUrl = new URL(Astro.url.pathname, Astro.site).href
@@ -27,6 +28,7 @@ const {
   pubDatetime,
   modDatetime,
   scrollSmooth = false,
+  robots,
 } = Astro.props
 
 const socialImageURL = new URL(ogImage, Astro.url)
@@ -43,6 +45,7 @@ const socialImageURL = new URL(ogImage, Astro.url)
 
     <title>{title}</title>
     <meta name="description" content={description} />
+    {robots && <meta name="robots" content={robots} />}
 
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />

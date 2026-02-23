@@ -50,14 +50,25 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured)
       <p>
         {SITE.desc}
       </p>
-      {
-        SOCIALS.length > 0 && (
-          <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
-            <div class="mr-2 mb-1 whitespace-nowrap sm:mb-0">Follow us:</div>
-            <Socials />
-          </div>
-        )
-      }
+      <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
+        {
+          SOCIALS.length > 0 && (
+            <div class="flex flex-row items-center gap-3">
+              <div class="whitespace-nowrap">Follow us:</div>
+              <Socials />
+            </div>
+          )
+        }
+        <div class="flex flex-row items-center gap-3">
+          <span class="whitespace-nowrap">Support us:</span>
+          <LinkButton
+            href="/donate"
+            class="rounded bg-accent px-3 py-1 text-xs text-white hover:text-white hover:opacity-80"
+          >
+            Donate
+          </LinkButton>
+        </div>
+      </div>
     </section>
 
     <Hr />
